@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Segoe UI, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
+
+.controls button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #eee;
+}
+
+.controls button.active {
+    background: #667eea;
+    color: white;
+}
+
+/* Layout */
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+#recipe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+/* Cards */
+.recipe-card {
+    background: white;
+    width: 300px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.recipe-card h3 {
+    color: #667eea;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+/* Difficulty */
+.difficulty {
+    padding: 0.2rem 0.7rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.easy { background:#d4edda; color:#155724; }
+.medium { background:#fff3cd; color:#856404; }
+.hard { background:#f8d7da; color:#721c24; }
+
+/* Toggle sections */
+.toggle-btn {
+    margin-top: 0.5rem;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.steps-container,
+.ingredients-container {
+    display: none;
+    margin-top: 0.8rem;
+}
+
+.visible {
+    display: block;
+}
+
+.steps ul {
+    padding-left: 1rem;
+}
+
+.substep {
+    margin-left: 1rem;
+    color: #555;
+}
